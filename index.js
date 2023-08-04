@@ -26,8 +26,14 @@ function init() {
 
         {
             type: "input",
-            name: "Table of Contents",
-            message: "Links for Table of Contents:"
+            name: "imageAlt",
+            message: "Alt text for image"
+        },
+
+        {
+            type: "input",
+            name: "imageUrl",
+            message: "URL for image"
         },
 
         {
@@ -44,14 +50,14 @@ function init() {
 
         {
             type: "input",
-            name: "Contributing",
-            message: "Who contributed to the application?"
+            name: "Tests",
+            message: "How to run tests:"
         },
 
         {
             type: "input",
-            name: "Tests",
-            message: "How to run tests:"
+            name: "Contributors",
+            message: "Who contributed to the application?"
         },
 
         {
@@ -65,6 +71,12 @@ function init() {
                 {name: "none"}
             ]
         },
+
+        {
+            type: "input",
+            name: "Questions",
+            message: "How can people reach you if they have questions?"
+        }
 
     ]).then((response) => {
         console.log(response);
