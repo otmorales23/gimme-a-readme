@@ -62,13 +62,13 @@ function init() {
 
         {
             type: "list",
-            name: "License",
+            name: "license",
             message: "Is there a license included?",
             choices: [
-                {name: "Apache"},
-                {name: "MIT"},
-                {name: "GNU"},
-                {name: "none"}
+                { name: "Apache" },
+                { name: "MIT" },
+                { name: "GNU" },
+                { name: "none" }
             ]
         },
 
@@ -79,8 +79,13 @@ function init() {
         }
 
     ]).then((response) => {
-        console.log(response);
-
+        fs.writeFile("generatedREADME.md", generateMarkdown(response), (err) => {
+            if (err)
+                console.log(err);
+            else {
+                console.log("README generated successfully");
+            }
+        })
     })
 }
 
