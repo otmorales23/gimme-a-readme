@@ -1,3 +1,5 @@
+
+  
   # Gimme A Readme
 
   ## Table of Contents
@@ -7,6 +9,7 @@
   * [Tests](#tests)
   * [Contributors](#contributors)
   * [Questions](#questions)
+  * 
 
   ## Description
   A simple readme generator
@@ -28,5 +31,5 @@
   ## Questions
   For any questions please contact me via email at oliverwills0227@gmail.com 
 
-  ## Other
-  This ReadMe was created using the generator
+  
+

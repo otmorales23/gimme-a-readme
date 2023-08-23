@@ -1,20 +1,68 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (license === "none") {
+    return ``
+  }
+  else {
+    return `![Badge](https://img.shields.io/badge/license-${license}-pink)`
+  }
+ }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseLink(license) {
+  if (license === "none") {
+    return ``
+  }
+  else {
+    return `* [License](#license)`;
+  }
+ }
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+function renderLicenseSection(license) {
+  if (license === "none") {
+    return ``
+  }
+  else {
+    return `## License 
+    This project is licensed with ${license}`;
+  }
+ }
+
+export default function generateMarkdown(response) {
+  return `${renderLicenseBadge(response.license)}
+  
+  # ${response.title}
+
+  ## Table of Contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Tests](#tests)
+  * [Contributors](#contributors)
+  * [Questions](#questions)
+  * ${renderLicenseLink(response.license)}
+
+  ## Description
+  ${response.description}
+
+  ![${response.imageAlt}](${response.imageUrl})
+
+  ## Installation
+  ${response.installation}
+
+  ## Usage
+  ${response.usage}
+
+  ## Tests
+  ${response.tests}
+
+  ## Contributors
+  ${response.contributors}
+
+  ## Questions
+  ${response.questions}
+
+  ${renderLicenseSection(response.license)}
 
 `;
 }
 
-module.exports = generateMarkdown;

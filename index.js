@@ -1,13 +1,85 @@
-// TODO: Include packages needed for this application
+import inquirer from "inquirer";
+import fs from "fs";
+import generateMarkdown from "./utils/generateMarkdown.js";
 
-// TODO: Create an array of questions for user input
-const questions = [];
+function init() {
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "title",
+            message: "Title of ReadMe:"
+        },
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+        {
+            type: "input",
+            name: "description",
+            message: "Description of ReadMe:"
+        },
 
-// TODO: Create a function to initialize app
-function init() {}
+        {
+            type: "input",
+            name: "imageAlt",
+            message: "Alt text for image"
+        },
+
+        {
+            type: "input",
+            name: "imageUrl",
+            message: "URL for image"
+        },
+
+        {
+            type: "input",
+            name: "installation",
+            message: "How to Install Application:"
+        },
+
+        {
+            type: "input",
+            name: "usage",
+            message: "How to use application:"
+        },
+
+        {
+            type: "input",
+            name: "tests",
+            message: "How to run tests:"
+        },
+
+        {
+            type: "input",
+            name: "contributors",
+            message: "Who contributed to the application?"
+        },
+
+        {
+            type: "list",
+            name: "license",
+            message: "Is there a license included?",
+            choices: [
+                { name: "Apache" },
+                { name: "MIT" },
+                { name: "GNU" },
+                { name: "none" }
+            ]
+        },
+
+        {
+            type: "input",
+            name: "questions",
+            message: "How can people reach you if they have questions?"
+        }
+
+    ]).then((response) => {
+        fs.writeFile("generatedREADME.md", generateMarkdown(response), (err) => {
+            if (err)
+                console.log(err);
+            else {
+                console.log("README generated successfully");
+            }
+        })
+    })
+}
 
 // Function call to initialize app
 init();
