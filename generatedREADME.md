@@ -1,6 +1,6 @@
-
+![Badge](https://img.shields.io/badge/license-MIT-pink)
   
-  # Gimme A Readme
+  # Pink Coding Portfolio
 
   ## Table of Contents
   * [Description](#description)
@@ -9,27 +9,28 @@
   * [Tests](#tests)
   * [Contributors](#contributors)
   * [Questions](#questions)
-  * 
+  * [License](#license)
 
   ## Description
-  A simple readme generator
+  A pink-themed portfolio of my completed projects.
 
-  ![Screenshot of filled out console](images/console.png)
+  ![Screenshot of my portfolio](images/portfolio.png)
 
   ## Installation
-  To install and run this application, run "node index" in your terminal.
+  This website does not install, instead simply click on the following link: [Pink Coding Portfolio](https://otmorales23.github.io/pink-coding-portfolio/)
 
   ## Usage
-  Fill in the information of your ReadMe in the terminal, as is relative to your project then view the generatedReadMe.md file.
+  Once you've opened the webpage, scroll through and click on the navigation bar or any images of works to be redirected to their respective sites.
 
   ## Tests
-  Run "node index" in your console, then answer the questions in the terminal with whatever you want.
+  N/A
 
   ## Contributors
-  Ollie Terry, TA Kayvon Kazemini 
+  Ollie Terry-Morales
 
   ## Questions
-  For any questions please contact me via email at oliverwills0227@gmail.com 
+  If you have any questions don't hestitate to reach out to via email at oliverwills0227@gmail.com
 
-  
+  ## License 
+    This project is licensed with MIT
 

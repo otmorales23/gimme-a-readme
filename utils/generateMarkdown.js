@@ -39,7 +39,7 @@ export default function generateMarkdown(response) {
   * [Tests](#tests)
   * [Contributors](#contributors)
   * [Questions](#questions)
-  * ${renderLicenseLink(response.license)}
+  ${renderLicenseLink(response.license)}
 
   ## Description
   ${response.description}
