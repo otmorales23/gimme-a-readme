@@ -12,6 +12,7 @@
   A simple readme generator
 
   ![Screenshot of filled out console](images/console.png)
+  ![Video of working generator](images/ReadMe_generated_test)
 
   ## Installation
   To install and run this application, run "node index" in your terminal.
