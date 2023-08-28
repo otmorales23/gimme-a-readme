@@ -30,4 +30,6 @@
   For any questions please contact me via email at oliverwills0227@gmail.com 
 
   ## Other
-  This ReadMe was created using the generator
+  This ReadMe was created using the generator.
+  The video of the ReadMe generator is too big for the ReadMe, so you'll have to view/download the raw file. 
+  
